@@ -26,7 +26,7 @@ public class IndexController {
     // }
     @GetMapping("/")
     public String index(Model model, @LoginUser SessionUser user) {
-        model.addAttribute("posts", memoriesService.findAllDesc());
+        model.addAttribute("memories", memoriesService.findAllDesc());
 
         System.out.println("user:"+user);
         

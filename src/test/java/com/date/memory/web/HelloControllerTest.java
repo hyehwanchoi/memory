@@ -25,8 +25,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 
 public class HelloControllerTest extends AbstractControllerTest {
 
-    @WithMockUser(roles = "USER")
     @Test
+    @WithMockUser(roles = "USER")
     public void goodDate() throws Exception {
         String date = "Good Date";
 
@@ -36,8 +36,8 @@ public class HelloControllerTest extends AbstractControllerTest {
             .andDo(print());
     }
 
-    @WithMockUser(roles = "USER")
     @Test
+    @WithMockUser(roles = "USER")
     public void junit5Test() throws Exception {
         assertEquals(2, calculator(1,1), "Yes");
         assertAll("Heading", 
