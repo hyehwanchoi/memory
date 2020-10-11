@@ -14,7 +14,7 @@ public class HelloControllerTest extends AbstractControllerTest {
 
     @Test
     public void goodDate() throws Exception {
-        String date = "Good Date";
+        String date = "GoodDate";
 
         mvc.perform(get("/date"))
             .andExpect(status().isOk())

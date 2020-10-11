@@ -8,6 +8,6 @@ public class HelloController {
     
     @GetMapping("/date")
     public String goodDate() {
-        return "Good Date";
+        return "GoodDate";
     }
 }
