@@ -1,0 +1,15 @@
+spring:
+    h2:
+        console:
+            enabled: true
+    datasource:
+        hikari:
+            jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL;
+    jpa:
+        properties:
+            database:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+                storage_engine: innodb
+        show-sql: true
+    profiles:
+        include: oauth
