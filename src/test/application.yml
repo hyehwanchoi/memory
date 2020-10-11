@@ -15,4 +15,5 @@ spring:
                         client-id: test
                         client-secret: test
                         scope: profile, email
-          
+    session:   
+        store-type: jdbc
