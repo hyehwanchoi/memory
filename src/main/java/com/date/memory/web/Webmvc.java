@@ -8,6 +8,6 @@ public class Webmvc {
     
     @GetMapping("/webmvc")
     public String WebmvcPrint() {
-        return "HelloWorld";
+        return "hello";
     }
 }
