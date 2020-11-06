@@ -8,8 +8,7 @@ spring:
     jpa:
         properties:
             database:
-                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-                storage_engine: innodb
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect;
         show-sql: true
     profiles:
         include: oauth
